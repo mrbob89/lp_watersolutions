@@ -1,0 +1,27 @@
+{
+  "name": "morkov_agency",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "bobo89 <romanboboshko89@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client_src/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "^3.3.1",
+    "jquery": "^2.2.1",
+    "remodal": "^1.0.6",
+    "Swiper": "swiper#^3.3.1",
+    "venobox": "^1.6.0",
+    "html5-form-validation": "~1.5.3"
+  }
+}
