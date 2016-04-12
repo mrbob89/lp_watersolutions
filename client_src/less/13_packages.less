@@ -1,0 +1,39 @@
+.packages {
+	width: 100%;
+	padding-top: 6.5rem;
+
+	@media @mobile {
+		height: auto;
+		background: #e8eaed;
+	}
+	@media @desktop {
+		height: 113.1rem;
+		background: #e8eaed url("@{dir}bg-pac-1.jpg") no-repeat top center;
+	}
+
+	h2 {
+		max-width: 80rem;
+		margin-bottom: 10.5rem;
+	}
+
+	&__row {
+		.wrap;
+		
+		@media @mobile {
+			.wrap("gutter-inner", 0, 1);
+		}
+		@media @desktop {
+			.wrap("gutter-inner", 24, 3);
+		}
+	}
+
+	&__item {
+		vertical-align: top;
+		background: #fff;
+		border-radius: 5px;
+		padding: 0 3rem 3rem;
+	}
+	&__picture {
+		margin-bottom: 3.2rem;
+	}
+}

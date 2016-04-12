@@ -1,5 +1,5 @@
 {
-  "name": "morkov_agency",
+  "name": "lp_watersolutions",
   "description": "",
   "main": "index.html",
   "authors": [
@@ -17,11 +17,8 @@
     "tests"
   ],
   "dependencies": {
-    "modernizr": "^3.3.1",
     "jquery": "^2.2.1",
     "remodal": "^1.0.6",
-    "Swiper": "swiper#^3.3.1",
-    "venobox": "^1.6.0",
-    "html5-form-validation": "~1.5.3"
+    "Swiper": "swiper#^3.3.1"
   }
 }

@@ -17,3 +17,4 @@ $(window).scroll(function() {
     	$('.trumpet__water').css('background', 'url(\'images/water-5.png\')');
     }
 });
+//# sourceMappingURL=all.js.map

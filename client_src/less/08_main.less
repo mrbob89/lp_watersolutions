@@ -1,0 +1,90 @@
+.main {
+	position: relative;
+	padding-top: 13rem;
+	background: url("@{dir}bg-top.jpg") no-repeat center top;
+	.container {
+		.wrap();
+	}
+
+	h1 {
+		.fs(5rem);
+		font-weight: 700;
+		color: @grey2;
+		margin-bottom: 6.1rem;
+	}
+
+	&__row {
+		.wrap("inblock");
+		@media @mobile {
+			.col(10,12);
+		}
+		@media @desktop {
+			.col(8,12);
+		}
+	}
+
+	&__gift {
+		padding-left: 17rem;
+		margin-bottom: 10rem;
+
+		p {
+			.fs(3.5rem);
+			line-height: 1.1;
+			font-weight: 300;
+			color: #000;
+		}
+		
+
+		@media @desktop-xl {
+			max-width: 80%;
+		}
+	}
+
+	&__specialist {
+		display: block;
+		max-width: 62.8rem;
+		background: #f8f9f9;
+		border-radius: 5px;
+		padding: 3rem 2.6rem;
+		margin-bottom: 9rem;
+	}
+
+	&__feature {
+		.col(1,3);
+
+		font-size: @fsb;
+		font-weight: 300;
+		font-style: italic;
+	}
+}
+
+.trumpet {
+	position: absolute;
+	top: 0;
+	right: 16.66%;
+	width: 9.7rem;
+	height: 384.8rem;
+	
+	&__back {
+		width: inherit;
+		height: inherit;
+		background: url("@{dir}trumpet-back.jpg");
+	}
+	&__top {
+		position: absolute;
+		top: 0;
+		left: -26.3rem;
+		width: 92.5rem;
+		height: 430.9rem;
+		background: url("@{dir}trumpet.png");
+	}
+
+	&__water {
+		position: fixed;
+		width: 6.9rem;
+		height: 42.6rem;
+		background: url("@{dir}water-1.png");
+		margin-left: 1.5rem;
+	}
+}
+
