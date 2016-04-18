@@ -1,0 +1,147 @@
+.check {
+	padding-top: 7.5rem;
+	padding-bottom: 20rem;
+
+	h2 {
+		margin-bottom: 5.4rem;
+	}
+
+	&__info {
+		height: 38.8rem;
+		vertical-align: top;
+		border: 1px solid #e3e6e9;
+		border-radius: 5px;
+		padding: 3.5rem 2.4rem;
+
+		@media @mobile {
+			.col(12,12);
+			margin-bottom: 3rem;
+		}
+		@media @tablet {
+			.col(5,12);
+			margin-bottom: 0;
+		}
+		@media @desktop {
+			.col(3,12);
+		}
+
+		p {
+			font-size: @fsb;
+			font-weight: 300;
+			line-height: 1.25;
+			margin-bottom: 1.8rem;
+
+			span {
+				font-weight: 700;
+			}
+
+			&.lined {
+				&:after {
+					display: block;
+					content: "";
+					width: 45px;
+					height: 4px;
+					background: @blue;
+					margin-top: 1.8rem;
+				}
+			}
+		}
+	}
+
+	&__form {
+		height: 38.8rem;
+		vertical-align: top;
+		background: #212e3f;
+		border-radius: 5px;
+		padding: 3.5rem;
+
+		@media @mobile {
+			.col(12,12);
+		}
+		@media @tablet {
+			.col(6,12);
+			margin-left: 2.4rem;
+		}
+		@media @desktop {
+			.col(4,12);
+		}
+
+		p {
+			font-size: 2rem;
+			font-weight: 300;
+			color: #fff;
+			line-height: 1.2;
+			margin-bottom: 1.8rem;
+		}
+	}
+
+	&__left {
+		vertical-align: top;
+		
+
+		@media @mobile {
+			.col(12,12);
+		}
+		@media @desktop {
+			.col(8,12);
+		}
+
+		.check__info {
+			@media @mobile {
+				.col(12,12);
+				margin-bottom: 3rem;
+			}
+			@media @tablet {
+				.col(5,12);
+				margin-bottom: 0;
+			}
+			@media @desktop {
+				.col(4.5,12);
+			}
+		}
+
+		.check__form {
+			@media @mobile {
+				.col(12,12);
+			}
+			@media @tablet {
+				.col(6,12);
+				margin-left: 2.4rem;
+			}
+			@media @desktop {
+				.col(6,12);
+			}
+		}
+	}
+	&__right {
+		vertical-align: top;
+		@media @mobile {
+			.col(12,12);
+		}
+		@media @desktop {
+			.col(4,12);
+		}
+	}
+}
+
+
+
+.certificates {
+	@media @mobile {
+		.col(12,12);
+	}
+	@media @desktop {
+		.col(12,12);
+	}
+
+	h3 {
+		font-size: 4rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+	}
+	p {
+		font-size: 2rem;
+		font-weight: 300;
+		line-height: 1.3;
+	}
+}

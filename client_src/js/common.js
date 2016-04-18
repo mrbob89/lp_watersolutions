@@ -13,7 +13,13 @@ $(window).scroll(function() {
     if (height > 1750) {
     	$('.trumpet__water').css('background', 'url(\'images/water-4.png\')');
     }
-    if (height > 2550) {
+    if (height > 2620) {
     	$('.trumpet__water').css('background', 'url(\'images/water-5.png\')');
+    }
+    if (height > 3700) {
+        $('.trumpet__water').css('display', 'none');
+    }
+    if (height <= 3700) {
+        $('.trumpet__water').css('display', 'block');
     }
 });

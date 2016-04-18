@@ -1,3 +1,87 @@
 .steps {
-	
+	background: #212e3f;
+	padding-top: 7.8rem;
+	padding-bottom: 7.2rem;
+
+	h2 {
+		font-size: 4rem;
+		font-weight: 700;
+		color: #fff;
+		margin-bottom: 4.5rem;
+	}
+
+	&__row {
+		.wrap;
+	}
+
+	&__item {
+		vertical-align: top;
+		@media @mobile {
+			.col(4,4);
+			margin-bottom: 3rem;
+		}
+		@media @tablet {
+			.col(2,4);
+			margin-bottom: 0;
+		}
+		@media @desktop {
+			.col(1,4);
+		}
+	}
+
+	&__icon {
+		position: relative;
+
+		@media @mobile {
+			margin-bottom: 2rem;
+		}
+		@media @tablet {
+			height: 15.9rem;
+			margin-bottom: 6.7rem;
+		}
+
+		img {
+			display: block;
+			@media @mobile {
+				margin: 0 auto;
+			}
+			@media @tablet {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+
+	&__animation {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&__info {
+		span {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 12.5rem;
+			font-weight: 700;
+			line-height: 0.75;
+			color: #617692;
+		}
+		p {
+			display: inline-block;
+			vertical-align: top;
+			max-width: 19rem;
+			font-weight: 300;
+			color: #d1dae5;
+			line-height: 1.2;
+			margin-left: 1.5rem;
+		}
+
+		.btn {
+			font-size: @fs;
+			padding: 5px 12px 7px;
+			margin: 1.5rem 0 0 8.5rem;
+		}
+	}
 }

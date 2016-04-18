@@ -1,0 +1,38 @@
+.clients {
+	padding: 4rem 0;
+	background: #f0f2f3;
+
+	.container {
+		.wrap;
+
+		&>* {
+			vertical-align: middle;
+		}
+	}
+
+	h2 {
+		font-size: 4rem;
+		font-weight: 700;
+		color: #6d6d6d;
+
+		@media @mobile {
+			.col(12,12);
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		@media @tablet {
+			.col(4,12);
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+
+	img {
+		@media @mobile {
+			.col(12,12,1,1);
+		}
+		@media @tablet {
+			.col(8,12,1,0);
+		}
+	}
+}

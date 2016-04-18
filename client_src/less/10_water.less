@@ -1,0 +1,127 @@
+.water {
+	padding-top: 7rem;
+	padding-bottom: 9rem;
+	
+	h2 {
+		margin-bottom: 5rem;
+	}
+
+	&__block {
+		vertical-align: top;
+		@media @mobile {
+			.col(12,12);
+		}
+		@media @tablet {
+			.col(6,12);
+		}
+		@media @desktop {
+			.col(4,12);
+		}
+
+		&--padding {
+			@media @tablet {
+				padding-left: 7rem;
+			}
+		}
+
+		p {
+			font-size: @fsb;
+			font-weight: 300;
+			color: #394551;
+			line-height: 1.2;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__qoute {
+		position: relative;
+		font-size: @fs;
+		font-weight: 300;
+		font-style: italic;
+		color: #6e7983;
+		margin-bottom: 2.5rem;
+
+		&:before, &:after {
+			position: absolute;
+			display: block;
+			font-size: 5rem;
+			font-weight: 700;
+			line-height: 0.8;
+			color: @blue;
+		}
+		&:before {
+			top: -1.5rem;
+			left: -3rem;
+			content: '“';
+		}
+		&:after {
+			bottom: -3rem;
+			right: -1rem;
+			content: '”';
+		}
+	}
+
+	&__author {
+		img {
+			float: left;
+			margin-right: 2rem;
+		}
+		h3 {
+			font-size: 2rem;
+			font-weight: 500;
+			color: #394551;
+		}
+		p {
+			font-size: @fss;
+			font-weight: 300;
+			color: #394551;
+		}
+	}
+
+	&__table {
+		@media @mobile {
+			.col(12,12);
+		}
+		@media @desktop {
+			.col(8,12);
+		}
+
+		ul {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		li {
+			font-size: @fs;
+			color: #7f7f7f;
+			padding: 9px 12px;
+			
+			&:first-child {
+				font-size: 1.65rem;
+				font-weight: 500;
+				color: #424242;
+
+				span {
+					font-style: normal !important;
+				}
+			}
+			&:nth-child(2n) {
+				background: #e3e6e9;
+				border-radius: 4px;
+			}
+			&:nth-child(2n+1) {
+				padding: 19px 12px;
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: top;
+				&:nth-child(1) { width: 30%; }
+				&:nth-child(2) { width: 20%; font-style: italic;}
+				&:nth-child(3) { width: 25%; font-style: italic;}
+				&:nth-child(4) { width: 25%; font-style: italic; font-weight: 500;}
+			}
+		}
+	}
+}
